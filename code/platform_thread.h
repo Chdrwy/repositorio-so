@@ -1,9 +1,8 @@
-/* platform_thread.h
- * Camada de abstracao de threads do trabalho. A ideia e ter uma API so
+/* Camada de abstracao de threads do trabalho. A ideia e ter uma API so
  * (as funcoes pt_...) que funciona igual no Linux e no Windows. Por baixo,
  * no Linux a gente usa pthreads e no Windows a API Win32 nativa.
- * Importante: nada de winpthreads no Windows, o enunciado proibe.
- */
+ * Importante: nada de winpthreads no Windows, o enunciado proibe.*/
+ 
 #ifndef PLATFORM_THREAD_H
 #define PLATFORM_THREAD_H
 

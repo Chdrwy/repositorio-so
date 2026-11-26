@@ -1,11 +1,10 @@
-/* teste_plataforma.c
- * Testa cada operacao da camada platform_thread na plataforma em que o
+/* Testa cada operacao da camada platform_thread na plataforma em que o
  * programa estiver rodando. Cada teste confere o resultado de verdade (nao
  * so se "rodou sem erro"). Nos testes de bloqueio a gente confere que a
  * thread realmente ficou parada ANTES de mandar o post ou o signal.
  * Tem tambem uma thread vigia: se algum teste travar, ela mostra FALHA e
- * encerra o programa, em vez de deixar tudo parado para sempre.
- */
+ * encerra o programa, em vez de deixar tudo parado para sempre.*/
+ 
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>

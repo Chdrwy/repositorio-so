@@ -1,22 +1,8 @@
-/* platform_thread.c
- * Aqui fica a implementacao da camada. O mesmo arquivo tem as duas versoes:
+/* nesse mesmo arquivo temos as duas versoes:
  * a parte de dentro do #ifdef _WIN32 e a do Windows (CreateThread,
  * CRITICAL_SECTION, CONDITION_VARIABLE, CreateSemaphore) e a parte do #else
- * e a do Linux (pthreads e semaforos POSIX). Sem winpthreads.
- *
- * Algumas diferencas entre os dois lados que a gente precisa lembrar na
- * hora de analisar os resultados:
- *  - O semaforo do Linux (sem_t) usa futex por baixo, entao quando ninguem
- *    precisa esperar ele resolve tudo em modo usuario, sem chamar o kernel.
- *    O semaforo do Windows (CreateSemaphore) e um objeto do kernel, entao
- *    todo WaitForSingleObject e todo ReleaseSemaphore e chamada de sistema.
- *  - O Windows exige um valor maximo no semaforo e da erro se o
- *    ReleaseSemaphore passar dele. No Linux esse maximo nao existe. O nosso
- *    buffer nunca passa do maximo, entao isso nao atrapalha.
- *  - A CRITICAL_SECTION deixa a mesma thread travar duas vezes (e recursiva)
- *    e o pthread_mutex padrao nao deixa. Como o nosso codigo nunca trava o
- *    mesmo mutex duas vezes, tanto faz.
- */
+ * e a do Linux (pthreads e semaforos POSIX). Sem winpthreads.*/
+ 
 #ifndef _WIN32
   #define _POSIX_C_SOURCE 200809L   /* precisa disso pro clock_gettime aparecer */
 #endif
