@@ -1,0 +1,11 @@
+# executaveis 
+code/benchmark
+code/benchmark.exe
+testes/teste_plataforma
+testes/teste_plataforma.exe
+testes/teste_buffer
+testes/teste_buffer.exe
+*.o
+__pycache__/
+# pasta do teste rapido do script
+dados_teste/
