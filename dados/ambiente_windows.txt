@@ -1,0 +1,32 @@
+data: Thu Nov 26 21:40:40 -03 2026
+plataforma: windows
+so: Windows-10.0.26300.9974
+compilador: gcc.exe (Rev7, Built by MSYS2 project) 16.2.0
+gcc -dumpmachine: x86_64-w64-mingw32
+flags: -std=gnu11 -Wall -Wextra -O2 -D_WIN32_WINNT=0x0601
+itens: 200000  repeticoes: 30  amostra_latencia: 1 a cada 100
+controles: aquecimento descartado; ordem A/B alternada por repeticao; pausa entre repeticoes: 0s
+governor: n/a
+uname -a: MINGW64_NT-10.0-26300 LAPTOP-H5RDUHHT 3.6.12-50c44b7c.x86_64 2026-10-30 16:46 UTC x86_64 Msys
+
+
+Name                      : Intel(R) Core(TM) i5-1035G1 CPU @ 1.00GHz
+NumberOfCores             : 4
+NumberOfLogicalProcessors : 8
+
+
+
+plano de energia: GUID do Esquema de Energia: bb5f9bea-c823-4f67-ad58-23fe764df3ab  (Alto desempenho)
+energia: BatteryStatus=2 (2 = ligado na tomada)
+hipervisor presente: False
+DLLs importadas pelo executavel (nao deve haver libwinpthread, cygwin1 ou msys-2.0):
+  DLL Name: KERNEL32.dll
+  DLL Name: api-ms-win-crt-convert-l1-1-0.dll
+  DLL Name: api-ms-win-crt-environment-l1-1-0.dll
+  DLL Name: api-ms-win-crt-heap-l1-1-0.dll
+  DLL Name: api-ms-win-crt-locale-l1-1-0.dll
+  DLL Name: api-ms-win-crt-math-l1-1-0.dll
+  DLL Name: api-ms-win-crt-private-l1-1-0.dll
+  DLL Name: api-ms-win-crt-runtime-l1-1-0.dll
+  DLL Name: api-ms-win-crt-stdio-l1-1-0.dll
+  DLL Name: api-ms-win-crt-string-l1-1-0.dll
